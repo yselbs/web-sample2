@@ -84,7 +84,6 @@ function convertTz($datetimeText){
     </div>
 
     <?= $recordLength === 0 ? "" : "全 $recordLength 件" ?>
-
     <? while ($note = $stmt->fetch(PDO::FETCH_ASSOC)) { ?>
       <? $lines = explode("\n", $note['content']); ?>
       <div class="card">
